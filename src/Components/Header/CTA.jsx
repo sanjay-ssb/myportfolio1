@@ -1,0 +1,14 @@
+import React from 'react'
+import './CTA.css'
+import CV from '../../Assets/Sanjay_Bhandari_Java_React_Developer.pdf'
+
+const CTA = () => {
+  return (
+    <div className="cta">
+        <a href={CV} download className='btn'>Download CV</a>
+        <a href="#Contact" className='btn btn-primary'>Lets's Talk</a>
+    </div>
+  )
+}
+
+export default CTA
