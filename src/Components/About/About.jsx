@@ -24,13 +24,13 @@ const about = () => {
             <article className="about__card">
               <GoProjectRoadmap className='about__icon' size={40}/>
               <h5>Projects</h5>
-              <small>4+ Projects</small>
+              <small>5+ Projects</small>
             </article>
 
             <article className="about__card">
               <FaAward className='about__icon' size={40}/>
               <h5>Certificates</h5>
-              <small>3+ Certificates</small>
+              <small>10+ Certificates</small>
             </article>
 
             <article className="about__card">
@@ -49,8 +49,8 @@ const about = () => {
                   leave a lasting impression.
 
           </p>
-          <a href={CV} download className='btn-nav'><h3>Download CV</h3></a>
-          <a href="#Contact" className='btn btn-primary'>Let's talk</a>
+          <a href={CV} download className='btn'><h3>Download CV</h3></a>
+          <a href="#Contact" className='btn'><h3>Let's talk</h3></a>
         </div>
       </div>
 

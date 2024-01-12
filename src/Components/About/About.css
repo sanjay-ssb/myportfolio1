@@ -70,23 +70,52 @@ section#About{
  }
 
  .about__card h5{
-   font-size: 0.95rem;
+   font-size: 1.2rem;
  }
 
  .about__card small {
-   font-size: 0.7rem;
-   color: var(--color-light);
+   font-size: 0.95rem;
+   color: var(--color-primary);
  }
 
  .about__content p{
    margin: 2rem 0 2.6rem;
-   color: var(--color-light);
+   color: var(--color-white);
  }
 section::after{
    content: "";
     display: block;
     clear: both;
 }
+.about__cards a .btn h3{
+   color: var(--color-white) !important;
+   background-color: var();
+}
+.about__cards a .btn h3:hover{
+   color: var();
+   background-color: var();
+}
+.btn{
+   color: var(--color-bg) !important;
+   background-color: var(--color-primary) !important;
+   padding: .2em 0.4em !important;
+   border-radius: 0;
+   margin: 0 0.4em;
+}
+.btn:hover{
+   color: var(--color-bg) !important;
+   background-color: var(--color-white) !important;
+   padding: .2em 0.4em !important;
+   border-radius: 0;
+   margin: 0 0.4em;
+}
+.btn h3{
+   color: var(--color-bg);
+}
+.btn h3:hover{
+   color: var(--color-bg);
+}
+
 
  /* =================================MEDIA QUERIES(MEDIUM DEVICES)=============================== */
 @media screen and (max-width: 1024px) {
