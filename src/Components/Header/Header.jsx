@@ -7,7 +7,7 @@ import Intro from './intro'
 import WebDeveloper from './WebDeveloper'
 
 const Header = () => {
-  return (
+  return ( 
     <header>
       <div className="container header__container">
         {/* <h2> I'm</h2>
@@ -16,7 +16,7 @@ const Header = () => {
          */}
          <Intro />
          {/* <WebDeveloper /> */}
-         <CTA />
+         {/* <CTA /> */}
         {/* <HeaderSocials /> */}
         <div className="me">
           <img src={ME} alt="MyPic" />

@@ -49,14 +49,14 @@ const arr = [
 const App = () => {
   return (
     <div>
+      <Footer />
       {/* <Header /> */}
-      <Nav />
-      {/* <About /> */}
+      {/* <Nav /> */}
+      <About />
       {/* <Experience /> */}
       {/* <Portfolio /> */} 
       {/* <Certificates /> */}
       {/* <Contact /> */}
-      {/* <Footer /> */}
     </div>
   );
 };
