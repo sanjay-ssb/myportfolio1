@@ -44,9 +44,10 @@ header::after{
     background: linear-gradient(var(--color-primary),transparent);
     width: 25rem;
     height: 30rem;
-    position: absolute;
+    /* position: absolute; */
+    bottom: 0;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin: 4rem auto 0 auto;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 0.3rem 0.3rem;
