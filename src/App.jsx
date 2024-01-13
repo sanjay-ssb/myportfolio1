@@ -7,7 +7,8 @@ import Experience from "./Components/Experience/Experience";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Certificates from "./Components/Certificates/Certificates";
 import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+
 
 
 // We can use this array to iterate over Components.
@@ -42,21 +43,22 @@ const arr = [
   },
   {
     id: 8,
-    component: Footer,
+    component: Navbar,
   },
 ];
 
 const App = () => {
   return (
     <div>
-      <Footer />
+      <Navbar />
       {/* <Header /> */}
       {/* <Nav /> */}
-      <About />
+      {/* <About /> */}
       {/* <Experience /> */}
       {/* <Portfolio /> */} 
       {/* <Certificates /> */}
       {/* <Contact /> */}
+      
     </div>
   );
 };

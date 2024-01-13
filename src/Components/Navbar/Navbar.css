@@ -1,7 +1,11 @@
-h4,h3{
+navbar .permalinks .navbar__a h4{
+
     display: inline;
 }
-footer{
+navbar .permalinks .navbar__socials h3{
+    display: inline;
+}
+navbar{
     color: var(--color-bg);
     background: var(--color-primary);
     padding: 0;
@@ -11,46 +15,51 @@ footer{
     justify-content: space-between;
     align-items: center;
     /* border: 0.3em solid var(--color-primary); */
-    /* margin-top: 7rem; */
-    /* To fix nav at top */
     position: sticky;
       width: 100%;
       top: 0;
       z-index: 1000;
     
 }
-footer::after{
+navbar::after{
     content: "";
     display: none;
     clear:both;
 }
+.nested-nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    align-items: center;
+ }
 .permalinks{
     display: flex;
     flex-direction: row;
     /* flex-wrap: start; *//* 3 */
     padding: 0;
-    justify-content: space-between;/* 2 */
+    justify-content: end;/* 2 */
     gap: 0.1rem;
     margin: 0;
  }
 
-.footer__a{
-    color: var(--color-bg);
+
+.navbar__a{
+    color: var(--color-white);
     background-color: var(--color-primary);
     padding: 1em;
     font-size: 1rem;
 }
-.footer__a:hover{
+.navbar__a:hover{
     color: var(--color-bg);
     background-color: var(--color-white);
     padding: 1em;
     font-size: 1rem;
 }
-.footer__a:hover h4{   
+.navbar__a:hover h4{   
     color: var(--color-bg) !important;
 }
  
- .footer__socials{
+ .navbar__socials{
     display: flex;
     flex-flow: row;
     justify-content: end;
@@ -58,24 +67,24 @@ footer::after{
     gap: 1rem; 
     padding: 0rem 1rem 0rem 0rem;
 }
-.footer__socials a{
+.navbar__socials a{
     padding: 0.2rem 0rem 0rem 0rem;
-    color: var(--color-bg);
-}
-.footer__socials a:hover{
     color: var(--color-white);
 }
-.footer__socials:hover{   
+.navbar__socials a:hover{
+    color: var(--color-bg);
+}
+.navbar__socials:hover{   
     color: var(--color-white); 
 }
 .btn-nav{
     padding: 0.8em !important;
-    color: var(--color-white)!important;
-    background-color: var(--color-bg);
-}
-.btn-nav:hover{
     color: var(--color-bg)!important;
     background-color: var(--color-white);
+}
+.btn-nav:hover{
+    color: var(--color-white)!important;
+    background-color: var(--color-bg);
 }
 .btn-nav:hover h3{
     color: var(--color-bg)!important;
@@ -85,11 +94,11 @@ nav{
 }
 
 /* =================================MEDIA QUERIES(Small DEVICES)=============================== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .permalinks {
         display: none;
     }
-    .footer__socials {
+    .navbar__socials {
         display: none;
     }
     nav{
