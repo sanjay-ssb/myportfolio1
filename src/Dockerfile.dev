@@ -1,0 +1,12 @@
+FROM node:alpine3.18
+
+WORKDIR /myReactPortfolio
+
+COPY ./package.json /myReactPortfolio
+
+RUN npm install
+
+COPY . /myReactPortfolio
+
+
+CMD ["npm","start"]
