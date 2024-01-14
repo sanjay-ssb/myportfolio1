@@ -24,7 +24,7 @@ import { FaNodeJs } from "react-icons/fa";
 const Experience = () => {
   return (
     <section id="Experience">
-      <h2>My Skills</h2>
+      <h1>My Skills</h1>
       <div className="container experience__container">
         <div className="experience__frontend">
       <h2 className="exp">Front-end Technologies</h2>
@@ -76,8 +76,8 @@ const Experience = () => {
 
 
         <div className="experience__backend">
-          <div className="experience__content">
         <h2 className="exp">Back-end Technologies</h2>
+          <div className="experience__content">
             <article className="experience__details">
               <FaJava className="experience__details-icon" size={30}/>
               <div>

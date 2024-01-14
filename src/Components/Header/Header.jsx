@@ -1,32 +1,23 @@
-import React from 'react'
-import './Header.css'
-import CTA from './CTA'
-import ME from '../../Assets/me.png'
-import HeaderSocials from './HeaderSocials'
-import Intro from './intro'
-import WebDeveloper from './WebDeveloper'
+import React from "react";
+import "./Header.css";
+import CTA from "./CTA";
+import ME from "../../Assets/me.png";
+import HeaderSocials from "./HeaderSocials";
+import Intro from "./intro";
+import WebDeveloper from "./WebDeveloper";
 
 const Header = () => {
-  return ( 
+  return (
     <header>
       <div className="container header__container">
-        {/* <h2> I'm</h2>
-        <h2>Sanjay Bhandari</h2>
-        <div className="h5 text-light">Fullstack Developer</div>
-         */}
-         <Intro />
-         {/* <WebDeveloper /> */}
-         {/* <CTA /> */}
-        {/* <HeaderSocials /> */}
+        <div className="header_intro"><Intro /></div>
+        {/* <CTA /> */}
         <div className="me">
-          <img src={ME} alt="MyPic" />
+          <img src={ME} id="my-img" alt="MyPic" />
         </div>
-       {/*  
-        <a href="#Contact" className='scroll__down'>Scroll Down</a>
-         */}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

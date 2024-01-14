@@ -1,5 +1,4 @@
 import React from 'react'
-import './CTA.css'
 import CV from '../../Assets/Sanjay_Bhandari_Java_React_Developer.pdf'
 
 const CTA = () => {

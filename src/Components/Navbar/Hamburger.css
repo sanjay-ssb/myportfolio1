@@ -1,0 +1,13 @@
+hamburgericon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+/* =================================MEDIA QUERIES(Small DEVICES)=============================== */
+@media screen and (max-width: 950px) {
+    .menu{
+        display: flex;
+    }
+}

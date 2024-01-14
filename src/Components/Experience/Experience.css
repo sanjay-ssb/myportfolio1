@@ -1,4 +1,5 @@
 
+
 section#Experience{
     margin-top: 1rem;
     height: 100vh; 
@@ -7,7 +8,15 @@ section#Experience{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
 
+ }
+ .experience__frontend > h2:nth-child(1){
+    text-align: center;
+ }
+ .experience__backend > h2:nth-child(1){
+    text-align: center;
  }
 
  .experience__container >div {
@@ -22,10 +31,11 @@ section#Experience{
 .experience__container >div  h3{
     text-align: center;
     padding: 0 1em;
-    color: var(--color-white);
+    color: var(--color-bg);
 }
-.experience__container h2{
-    text-align: center;
+#Experience > h1:nth-child(1){
+    text-align: center !important;
+    margin:0 auto;
 }
 .experience__content {
     display: grid;
@@ -42,20 +52,25 @@ section#Experience{
     background-color: var(--color-primary);
 }
 .experience__content > article:hover{
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
 }
 .experience__details-icon{
-    color: var(--color-white);
+    color: var(--color-bg);
 }
 
  /* =================================MEDIA QUERIES(MEDIUM DEVICES)=============================== */
  @media screen and (max-width: 1024px) {
+    section#Experience{
+        height: 100vh; 
+      }
+
     .experience__container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap:0.3em;
     }
     .experience__container > div{
-        width: 80%;
-        padding: 2rem;
+        width: 100%;
+        padding: 0;
         margin: 0 auto;
     }
     .experience__content{
@@ -65,11 +80,14 @@ section#Experience{
  
  /* =================================MEDIA QUERIES(Small DEVICES)=============================== */
  @media screen and (max-width: 600px) {
+    section#Experience{
+        height: 100vh; 
+      }
     .experience__container{
-        gap: 1rem;
+        gap: .3rem;
     }
     .experience__container > div{
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 0;
     }
  }

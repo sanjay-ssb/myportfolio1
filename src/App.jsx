@@ -12,40 +12,6 @@ import Navbar from "./Components/Navbar/Navbar";
 
 
 // We can use this array to iterate over Components.
-const arr = [
-  {
-    id: 1,
-    component: Header,
-  },
-  {
-    id: 2,
-    component: Nav,
-  },
-  {
-    id: 3,
-    component: About,
-  },
-  {
-    id: 4,
-    component: Experience,
-  },
-  {
-    id: 5,
-    component: Portfolio,
-  },
-  {
-    id: 6,
-    component: Certificates,
-  },
-  {
-    id: 7,
-    component: Contact,
-  },
-  {
-    id: 8,
-    component: Navbar,
-  },
-];
 
 const App = () => {
   return (
@@ -55,7 +21,7 @@ const App = () => {
       {/* <Nav /> */}
       {/* <About /> */}
       {/* <Experience /> */}
-      {/* <Portfolio /> */} 
+      <Portfolio /> 
       {/* <Certificates /> */}
       {/* <Contact /> */}
       

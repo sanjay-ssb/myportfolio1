@@ -1,19 +1,32 @@
-section >h2{
-   color: var(--color-primary);
+div #About>h2{
+   color: var(--color-white);
    margin: 2rem auto;
    text-align: center;
  }
-section#About{
+div #About{
+   /* border: 3px solid red; */
    margin-top: 1rem;
    height: 100vh;
+   width: 100%;
+ }
+ .buttons{
+   text-align: center;
  }
 .about__container{
-    display: grid;
-    grid-template-columns: 35% 60%;
-    gap: 5%;
+   /* border: 3px solid white; */
+   width: var(--container-width-lg);
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: center;
+   gap: 5%;
  }
+/*  .para{
+    border: 3px solid white; 
+ } */
 
- .about__me{
+/*  .about__me{
+   border: 3px solid white;
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
@@ -25,25 +38,28 @@ section#About{
     );
     display: grid;
     place-items: center;
- }
+ } */
 
- .about__me-image{
+/*  .about__me-image{
+   border: 3px solid white;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
- }
+ } */
 
- .about__me-image:hover{
+ /* .about__me-image:hover{
      transform: rotate(0);
- }
+ } */
 
  .about__cards {
+   /* border: 3px solid white; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
  }
 
  .about__card{
+  /*  border: 3px solid white; */
     background: var(--color-primary-variant);
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
@@ -51,15 +67,16 @@ section#About{
 
  .about__card {
    background: var(--color-bg);
-   border:3px solid transparent;
+   /* border:3px solid transparent; */
    /* border-radius: 0.5rem; */
    padding: 1rem;
    text-align: center;
  }
 
  .about__card:hover{
-   background: transparent;
-   border:3px solid var(--color-primary);
+   background: var(--color-primary);
+   color: var(--color-bg);
+   /* border:3px solid var(--color-primary); */
    cursor: default;
  }
 
@@ -82,7 +99,7 @@ section#About{
    margin: 2rem 0 2.6rem;
    color: var(--color-white);
  }
-section::after{
+ div::after{
    content: "";
     display: block;
     clear: both;
@@ -96,6 +113,7 @@ section::after{
    background-color: var();
 }
 .btn{
+   /* border: 3px solid white; */
    color: var(--color-bg) !important;
    background-color: var(--color-primary) !important;
    padding: .2em 0.4em !important;
@@ -118,20 +136,22 @@ section::after{
 
 
  /* =================================MEDIA QUERIES(MEDIUM DEVICES)=============================== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
    .about__container{
+      width: var(--container-width-md);
+      display: grid;
       grid-template-columns: 1fr;
-      gap: 0;
+      justify-content: center;
    }
-   .about__me{
+/*    .about__me{
       width: 50%;
-      margin: 2rem auto 1rem;
-   }
+      margin: 0rem auto 0rem;
+   } */
 
    .about__content{
       margin: 1rem 0 1.5rem;
    }
-   section::after{
+   div::after{
       content: "";
        display: block;
        clear: both;
@@ -139,28 +159,36 @@ section::after{
 }
 
 /* =================================MEDIA QUERIES(Small DEVICES)=============================== */
-@media screen and (max-width: 600px) {
-   .about__me{
-      width: 65%;
+@media screen and (max-width: 600px) { 
+/*    .about__me{
+      width: 75%;
       margin: 0 auto 1rem;
+   } */
+   .about__container{
+     /*  border: 3px solid white; */
+      width: var(--container-width-sm);
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:0;
+    }
+   
+   .about__content{
+      
+      margin:0em;
+      text-align: center;
    }
    .about__card{
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      gap: .5rem;
    }
-   .about__content{
-      text-align: center;
-   }
-
-   .about__content{
-      margin: 1.5rem;
-   }
-   .about__content p {
-      margin: 1.5rem 0;
-   }
-   section::after{
+/*    .about__content p {
+      margin: 1.5rem 0; 
+   } */
+   div::after{
       content: "";
        display: block;
        clear: both;
    }
 }
+/* Overlay layer just for development */

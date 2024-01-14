@@ -5,6 +5,9 @@ navbar .permalinks .navbar__a h4{
 navbar .permalinks .navbar__socials h3{
     display: inline;
 }
+.logo{
+    padding:0.1em 1em 0.1em 1em;
+}
 navbar{
     color: var(--color-bg);
     background: var(--color-primary);
@@ -58,7 +61,7 @@ navbar::after{
 .navbar__a:hover h4{   
     color: var(--color-bg) !important;
 }
- 
+/*  
  .navbar__socials{
     display: flex;
     flex-flow: row;
@@ -76,7 +79,7 @@ navbar::after{
 }
 .navbar__socials:hover{   
     color: var(--color-white); 
-}
+} */
 .btn-nav{
     padding: 0.8em !important;
     color: var(--color-bg)!important;
@@ -89,20 +92,40 @@ navbar::after{
 .btn-nav:hover h3{
     color: var(--color-bg)!important;
 }
+
 nav{
     display: none;
 }
 
+/* .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  } */
+  
+
 /* =================================MEDIA QUERIES(Small DEVICES)=============================== */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .permalinks {
-        display: none;
-    }
-    .navbar__socials {
         display: none;
     }
     nav{
         display: flex;
     }
+    navbar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
 }
+
 
