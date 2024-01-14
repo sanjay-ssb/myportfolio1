@@ -17,13 +17,13 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      {/* <Header /> */}
-      {/* <Nav /> */}
-      {/* <About /> */}
-      {/* <Experience /> */}
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
       <Portfolio /> 
-      {/* <Certificates /> */}
-      {/* <Contact /> */}
+      <Certificates />
+      <Contact />
       
     </div>
   );

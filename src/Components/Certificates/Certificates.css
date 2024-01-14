@@ -29,8 +29,11 @@ section #Certificates #certificateBgTitle h5{
     text-align: center;
 }
 .certificates__item_cta{
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    gap: 1rem;
+    justify-content: center;
+    gap:.4rem;
 }
 .certificate.btn{
     background: var(--color-white);
@@ -59,8 +62,12 @@ section #Certificates::after{
     clear: both;
 }
 
+#Certificates > h2:nth-child(2){
+    margin: 0 auto;
+}
+
 /* =================================MEDIA QUERIES(MEDIUM DEVICES)=============================== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .certificates__container{
         grid-template-columns: 1fr 1fr;
         /* gap: 1.2rem; */
